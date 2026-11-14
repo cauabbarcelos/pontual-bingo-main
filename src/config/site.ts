@@ -6,7 +6,7 @@ export const siteConfig = {
   name: "Pontual Informática",
   tagline: "Soluções em Tecnologia",
   description:
-    "Empresa especializada na produção de cartelas personalizadas de bingo, com qualidade, praticidade e design profissional para o seu evento.",
+    "Empresa especializada na produção de cartelas personalizadas de bingo e rifa, com qualidade, praticidade e design profissional para o seu evento.",
   whatsapp: {
     /**
      * ⚠️ CONFIGURAÇÃO CENTRALIZADA DO WHATSAPP
@@ -19,7 +19,7 @@ export const siteConfig = {
      */
     number: "",
     defaultMessage:
-      "Olá! Gostaria de solicitar um orçamento para cartelas personalizadas de bingo.",
+      "Olá! Gostaria de solicitar um orçamento para cartelas personalizadas de bingo e rifa.",
   },
 } as const;
 

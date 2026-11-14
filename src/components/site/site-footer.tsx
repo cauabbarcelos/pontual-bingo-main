@@ -79,7 +79,7 @@ export function SiteFooter() {
               </span>
             </a>
             <p className="mt-4 text-xs leading-relaxed text-white/45">
-              Atendimento para orçamentos de cartelas personalizadas de bingo.
+              Atendimento para orçamentos de bingos e rifas personalizadas.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export function SiteFooter() {
             © {year} {siteConfig.name} — {siteConfig.tagline}. Todos os direitos
             reservados.
           </p>
-          <p>Cartelas personalizadas de bingo</p>
+          <p>Bingos e rifas personalizadas</p>
         </div>
       </Container>
     </footer>

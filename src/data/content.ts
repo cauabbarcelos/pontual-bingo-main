@@ -61,6 +61,30 @@ export const bingoModels: BingoModel[] = [
   },
 ];
 
+export type RaffleModel = {
+  id: string;
+  name: string;
+  description: string;
+  selection: "manual" | "random";
+};
+
+export const raffleModels: RaffleModel[] = [
+  {
+    id: "rifa-escolha-numeros",
+    name: "Escolha seus números",
+    description:
+      "Cada participante escolhe os números da sorte disponíveis na campanha.",
+    selection: "manual",
+  },
+  {
+    id: "rifa-numeros-aleatorios",
+    name: "Números aleatórios",
+    description:
+      "Uma forma rápida de participar, com números escolhidos automaticamente.",
+    selection: "random",
+  },
+];
+
 export type Step = {
   number: string;
   icon: LucideIcon;
@@ -99,9 +123,9 @@ export type FaqItem = { question: string; answer: string };
 
 export const faqItems: FaqItem[] = [
   {
-    question: "Vocês fazem cartelas de bingo personalizadas?",
+    question: "Vocês fazem bingos e rifas personalizados?",
     answer:
-      "Sim! Produzimos cartelas de bingo totalmente personalizadas: você escolhe o tema, as cores e a quantidade de números, e pode incluir logo, informações do evento e demais detalhes na arte.",
+      "Sim! Produzimos cartelas de bingo e rifas personalizadas: você escolhe o tema, as cores e os detalhes da campanha para criar materiais com a identidade do seu evento.",
   },
   {
     question: "Quantos números podem ter as cartelas?",

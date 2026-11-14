@@ -17,12 +17,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Pontual Informática | Cartelas personalizadas de Bingo",
+  title: "Pontual Informática | Cartelas personalizadas de Bingo e Rifa",
   description:
-    "Qualidade, praticidade e design profissional para o seu evento! Cartelas personalizadas de bingo, com QR Code, entrega rápida e sistema próprio. Solicite um orçamento pelo WhatsApp.",
+    "Solicite cartelas personalizadas de bingos e rifas. Qualidade, praticidade e design profissional para o seu evento!",
   keywords: [
     "cartelas de bingo personalizadas",
     "bingo personalizado",
+    "cartelas de rifa personalizadas",
+    "rifa personalizada",
     "cartelas com QR Code",
     "Pontual Informática",
   ],
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
     icon: "/pontual-icon.svg",
   },
   openGraph: {
-    title: "Pontual Informática | Cartelas personalizadas de Bingo",
+    title: "Pontual Informática | Cartelas personalizadas de Bingo e Rifa",
     description:
-      "Qualidade, praticidade e design profissional para o seu evento! Solicite um orçamento pelo WhatsApp.",
+      "Solicite cartelas personalizadas de bingos e rifas. Qualidade, praticidade e design profissional para o seu evento!",
     siteName: "Pontual Informática",
     locale: "pt_BR",
     type: "website",

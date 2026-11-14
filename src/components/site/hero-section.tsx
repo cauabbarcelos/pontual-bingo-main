@@ -1,8 +1,8 @@
 import { BingoBall } from "./bingo-ball";
 import { BingoCard } from "./bingo-card";
 import { Container } from "./container";
+import { RaffleCard } from "./raffle-card";
 import { Reveal } from "./reveal";
-import { WhatsAppCtaButton } from "./whatsapp-cta-button";
 
 export function HeroSection() {
   return (
@@ -63,11 +63,11 @@ export function HeroSection() {
           <div className="text-center lg:text-left">
             <Reveal>
               <h1>
-                <span className="block font-display text-xl font-bold text-brand-navy sm:text-2xl lg:text-[1.75rem]">
-                  Cartelas personalizadas de
+                <span className="block font-display text-xl font-bold text-brand-navy sm:text-2xl lg:text-[1.5rem]">
+                  Solicite cartelas personalizadas de
                 </span>
-                <span className="mt-1 block font-display text-[2.85rem] font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-                  <span className="text-brand-navy">BINGO</span>
+                <span className="mt-1 block font-display text-[2.65rem] font-extrabold leading-[1.02] tracking-tight sm:text-5xl lg:text-[3.45rem]">
+                  <span className="text-brand-navy">BINGOS E RIFAS</span>
                 </span>
               </h1>
               <p className="mx-auto mt-5 max-w-md font-display text-lg font-semibold leading-snug text-brand-navy/85 sm:text-xl lg:mx-0">
@@ -76,9 +76,6 @@ export function HeroSection() {
                   para o seu evento!
                 </span>
               </p>
-              <div className="mt-8 flex justify-center lg:justify-start">
-                <WhatsAppCtaButton size="lg" />
-              </div>
             </Reveal>
           </div>
 
@@ -107,10 +104,7 @@ export function HeroSection() {
                 seed={21}
                 className="z-10 w-32 -rotate-[14deg] sm:w-44 lg:w-52"
               />
-              <BingoCard
-                seed={55}
-                className="z-20 -ml-8 w-32 rotate-[2deg] sm:-ml-12 sm:w-44 lg:w-52"
-              />
+              <RaffleCard className="z-20 -ml-8 w-32 rotate-[2deg] sm:-ml-12 sm:w-44 lg:w-52" />
               <BingoCard
                 seed={88}
                 className="z-10 -ml-8 w-32 rotate-[14deg] sm:-ml-12 sm:w-44 lg:w-52"

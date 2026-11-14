@@ -1,9 +1,9 @@
 import { bingoModels } from "@/data/content";
 import { BingoCard } from "./bingo-card";
 import { Container } from "./container";
+import { RaffleModels } from "./raffle-models";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
-import { WhatsAppCtaButton } from "./whatsapp-cta-button";
 
 /** Pilha de mini cartelas representando a quantidade por jogador. */
 function CardStack({ count, seedBase }: { count: number; seedBase: number }) {
@@ -42,22 +42,28 @@ export function BingoModelsSection() {
             <Reveal key={model.id} delay={i * 0.1} className="h-full">
               <article className="group flex h-full flex-col items-center gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-blue/20 hover:shadow-xl hover:shadow-brand-navy/10 sm:flex-row sm:gap-5 sm:p-6">
                 <CardStack count={model.cards} seedBase={101 + i * 40} />
-                <div className="flex min-w-0 flex-1 flex-col items-center text-center sm:grid sm:self-stretch sm:grid-rows-[auto_1fr_auto] sm:items-start sm:text-left">
+                <div className="flex min-w-0 flex-1 flex-col items-center text-center sm:grid sm:self-stretch sm:grid-rows-[auto_1fr] sm:items-start sm:text-left">
                   <h3 className="font-display text-xl font-bold text-brand-blue">
                     {model.name}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate-500">
                     {model.description}
                   </p>
-                  <WhatsAppCtaButton
-                    variant="outline"
-                    size="sm"
-                    className="mt-4 sm:mt-0"
-                  />
                 </div>
               </article>
             </Reveal>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <SectionHeading
+            eyebrow="Modelos de Rifa"
+            eyebrowDashes
+            title="Sua campanha de rifa do seu jeito"
+            description="Opções digitais personalizadas para os participantes escolherem como concorrer."
+          />
+
+          <RaffleModels />
         </div>
       </Container>
     </section>

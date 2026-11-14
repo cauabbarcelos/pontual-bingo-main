@@ -40,7 +40,8 @@ export function FinalCtaSection() {
       <Container className="relative z-10 py-20 lg:py-24">
         <Reveal className="flex flex-col items-center text-center">
           <h2 className="max-w-3xl font-display text-3xl font-extrabold leading-tight text-white lg:text-5xl">
-            Vamos preparar seu <span className="text-brand-yellow">bingo</span>?
+            Vamos preparar seu <span className="text-brand-yellow">bingo</span>{" "}
+            ou <span className="text-brand-yellow">rifa</span>?
           </h2>
           <p className="mt-4 max-w-xl text-base text-white/85 sm:text-lg">
             Envie sua ideia, tema e quantidade. Nossa equipe prepara uma proposta
